@@ -38,6 +38,7 @@
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.lstKategoriler = new System.Windows.Forms.ListBox();
+            this.btnGeri = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,11 +132,22 @@
             this.lstKategoriler.TabIndex = 9;
             this.lstKategoriler.SelectedIndexChanged += new System.EventHandler(this.lstKategoriler_SelectedIndexChanged);
             // 
+            // btnGeri
+            // 
+            this.btnGeri.Location = new System.Drawing.Point(12, 298);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(75, 23);
+            this.btnGeri.TabIndex = 10;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.UseVisualStyleBackColor = true;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 344);
+            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.lstKategoriler);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGuncelle);
@@ -167,5 +179,6 @@
         private Button btnGuncelle;
         private Button btnSil;
         private ListBox lstKategoriler;
+        private Button btnGeri;
     }
 }

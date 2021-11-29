@@ -200,5 +200,12 @@ namespace NorthwindData
                 lstÜrünler.DataSource = products;
             }
         }
+
+        private void btnGeri2_Click(object sender, EventArgs e)
+        {
+            AnaForm anaForm = new AnaForm();
+            anaForm.Show();
+            this.Hide();
+        }
     }
 }

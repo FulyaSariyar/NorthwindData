@@ -53,12 +53,13 @@
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnTemizle = new System.Windows.Forms.Button();
+            this.btnGeri2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 9);
+            this.label1.Location = new System.Drawing.Point(74, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 15);
             this.label1.TabIndex = 0;
@@ -67,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(199, 9);
+            this.label2.Location = new System.Drawing.Point(255, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 15);
             this.label2.TabIndex = 1;
@@ -77,7 +78,7 @@
             // 
             this.lstKategoriler.FormattingEnabled = true;
             this.lstKategoriler.ItemHeight = 15;
-            this.lstKategoriler.Location = new System.Drawing.Point(40, 41);
+            this.lstKategoriler.Location = new System.Drawing.Point(74, 41);
             this.lstKategoriler.Name = "lstKategoriler";
             this.lstKategoriler.Size = new System.Drawing.Size(120, 289);
             this.lstKategoriler.TabIndex = 2;
@@ -87,7 +88,7 @@
             // 
             this.lstSuppliers.FormattingEnabled = true;
             this.lstSuppliers.ItemHeight = 15;
-            this.lstSuppliers.Location = new System.Drawing.Point(199, 41);
+            this.lstSuppliers.Location = new System.Drawing.Point(255, 41);
             this.lstSuppliers.Name = "lstSuppliers";
             this.lstSuppliers.Size = new System.Drawing.Size(120, 289);
             this.lstSuppliers.TabIndex = 3;
@@ -273,11 +274,22 @@
             this.btnTemizle.UseVisualStyleBackColor = true;
             this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
+            // btnGeri2
+            // 
+            this.btnGeri2.Location = new System.Drawing.Point(7, 307);
+            this.btnGeri2.Name = "btnGeri2";
+            this.btnGeri2.Size = new System.Drawing.Size(61, 23);
+            this.btnGeri2.TabIndex = 25;
+            this.btnGeri2.Text = "Geri";
+            this.btnGeri2.UseVisualStyleBackColor = true;
+            this.btnGeri2.Click += new System.EventHandler(this.btnGeri2_Click);
+            // 
             // UrunEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 340);
+            this.Controls.Add(this.btnGeri2);
             this.Controls.Add(this.btnTemizle);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGuncelle);
@@ -338,5 +350,6 @@
         private Button btnGuncelle;
         private Button btnSil;
         private Button btnTemizle;
+        private Button btnGeri2;
     }
 }

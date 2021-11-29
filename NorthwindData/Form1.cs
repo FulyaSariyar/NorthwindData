@@ -99,5 +99,12 @@ namespace NorthwindData
             ListeyiDoldur();
             KutulariBosalt();
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            AnaForm anaForm = new AnaForm();
+            anaForm.Show();
+            this.Hide();
+        }
     }
 }
